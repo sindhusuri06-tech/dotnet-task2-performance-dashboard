@@ -1,0 +1,19 @@
+@model IEnumerable<PerformanceDashboard.Models.Metric>
+
+<h2>Performance Dashboard</h2>
+
+<table border="1" cellpadding="5">
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+
+@foreach(var item in Model)
+{
+<tr>
+<td>@item.Name</td>
+<td>@item.Value</td>
+</tr>
+}
+
+</table>
